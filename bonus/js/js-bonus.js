@@ -4,7 +4,7 @@ var casual = Math.floor(Math.random() * 6) + 1;
 
 var startingPrice = Math.floor(Math.random() * 101);
 
-alert('Il prezzo di partenza è ' + startingPrice);
+alert('Il prezzo di partenza è ' + startingPrice + ' €');
 
 var numeroScelto = parseInt(prompt('Quale numero uscirà ? Scegli un numero da 1 a 6, se il numero scelto corrisponde con il numero uscito nei dadi otterrai uno sconto del 50%!!!'));
 
@@ -26,6 +26,6 @@ if(isNaN(numeroScelto)){
   priceContainer.append (' Mi dispiace hai perso niente sconto!!');
 }else{
   startingPrice -= (startingPrice / 100) * 50;
-  alert('Complimenti hai vinto hai ottenuto lo sconto del 50%!!!! il prezzo da pagare è ' + startingPrice);
+  alert('Complimenti hai vinto hai ottenuto lo sconto del 50%!!!! il prezzo da pagare è ' + startingPrice + ' €');
   priceContainer.append (' Complimenti hai vinto hai ottenuto lo sconto del 50%!!!!, il prezzo da pagare è ' + startingPrice);
 }
