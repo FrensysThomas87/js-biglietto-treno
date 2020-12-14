@@ -21,9 +21,10 @@ console.log(casual);
 
 if(isNaN(numeroScelto)){
   alert('Devi inserire un numero!!!!');
+  priceContainer.innerText = 'Devi inserire un numero!!!!!!!!!';
 }else if(casual!== numeroScelto){
   alert('Mi dispiace hai perso niente sconto!!')
-  priceContainer.append (' Mi dispiace hai perso niente sconto!!');
+  priceContainer.append (' Mi dispiace hai perso, niente sconto!!');
 }else{
   startingPrice -= (startingPrice / 100) * 50;
   alert('Complimenti hai vinto hai ottenuto lo sconto del 50%!!!! il prezzo da pagare è ' + startingPrice + ' €');
